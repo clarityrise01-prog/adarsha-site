@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adarsha Secondary School — Excellence from Nursery to Grade 12</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    :root {
+      --primary: #2563eb;
+      --secondary: #16a34a;
+      --text-dark: #1e293b;
+      --text-light: #64748b;
+      --bg-light: rgba(255,255,255,0.9);
+      --radius: 14px;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: var(--text-dark);
+      background: url('schol-photo.jpg') center/cover no-repeat fixed;
+      backdrop-filter: blur(4px);
+      background-image: url('school-photo.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+    }
+
+    .overlay {
+      background-color: rgba(255,255,255,0.85);
+      min-height: 100vh;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: var(--bg-light);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid #e2e8f0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo span {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      font-weight: 700;
+      border-radius: 12px;
+      width: 55px;
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text-dark);
+      margin: 0 12px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 120px 20px 80px;
+      background: rgba(255,255,255,0.7);
+      border-radius: 0 0 var(--radius) var(--radius);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      color: var(--text-light);
+      font-size: 18px;
+      max-width: 700px;
+      margin: 0 auto 20px;
+    }
+
+    .btn {
+      background: var(--primary);
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: transform 0.2s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 60px 20px;
+      background: var(--bg-light);
+      margin: 40px auto;
+      border-radius: var(--radius);
+      max-width: 1100px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card h3 {
+      color: var(--secondary);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: var(--bg-light);
+      margin-top: 60px;
+      border-top: 1px solid #e5e7eb;
+      color: var(--text-light);
+    }
+
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <header>
+      <div class="logo">
+        <span>A</span>
+        <div>
+          <h3 style="margin:0;">Adarsha Secondary School</h3>
+          <small>Excellence from Nursery to Grade 12</small>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#admissions">Admissions</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Welcome to Adarsha Secondary School</h1>
+      <p>We provide a strong foundation for your child's bright future — from Nursery to Grade 12.  
+         With more than <strong>100 experienced teachers</strong> and <strong>over 100 classrooms</strong>,  
+         we ensure personalized care and academic excellence for every student.</p>
+      <button class="btn" onclick="document.getElementById('admissions').scrollIntoView({behavior:'smooth'});">Enroll Now</button>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p style="text-align:center;max-width:800px;margin:auto;">Adarsha Secondary School has been a trusted name in education for decades. We focus on nurturing creativity, discipline, and moral values. Our goal is to help each student reach their potential and become confident, capable, and compassionate citizens.</p>
+    </section>
+
+    <section id="facilities">
+      <h2>Our Facilities</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Playground</h3>
+          <p>We provide a large, safe, and well-maintained playground where students play sports and build teamwork skills.</p>
+        </div>
+        <div class="card">
+          <h3>Computer Lab</h3>
+          <p>Equipped with modern computers and high-speed internet, students learn essential technology skills early on.</p>
+        </div>
+        <div class="card">
+          <h3>Clean & Hygienic Environment</h3>
+          <p>Our classrooms, drinking water, and sanitation facilities are regularly maintained to ensure top hygiene.</p>
+        </div>
+        <div class="card">
+          <h3>Quality Teachers</h3>
+          <p>Our 100+ dedicated teachers are passionate, experienced, and committed to student growth and innovation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="admissions">
+      <h2>Admissions Open</h2>
+      <p style="text-align:center;max-width:700px;margin:auto;">Admissions are now open from Nursery to Grade 12.  
+      Join Adarsha Secondary School — where your child learns, grows, and shines in a positive, well-equipped, and caring environment.</p>
+      <div style="text-align:center;margin-top:20px;">
+        <button class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});">Contact for Admission</button>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Address</h3>
+          <p>Adarsha Secondary School<br>Koshi Pradesh, Nepal</p>
+          <p>📞 +977-1-9876543<br>✉️ info@adarshaschool.edu.np</p>
+        </div>
+        <div class="card">
+          <h3>Send a Message</h3>
+          <form onsubmit="event.preventDefault();alert('Thank you for contacting us!');">
+            <input type="text" placeholder="Your Name" required style="width:100%;padding:10px;margin-bottom:8px;border-radius:8px;border:1px solid #ccc">
+            <input type="email" placeholder="Your Email" required style="width:100%;padding:10px;margin-bottom:8px;border-radius:8px;border:1px solid #ccc">
+            <textarea placeholder="Your Message" rows="4" style="width:100%;padding:10px;border-radius:8px;border:1px solid #ccc"></textarea>
+            <button class="btn" style="margin-top:10px;width:100%;">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> Adarsha Secondary School — All Rights Reserved.</p>
+      <p>“Educating Minds, Inspiring Hearts, and Building the Future.”</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').innerText = new Date().getFullYear();
+  </script>
+</body>
+</html>
